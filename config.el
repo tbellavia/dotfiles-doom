@@ -74,6 +74,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+
+;; My configuration
 (map! :g "C-;" #'+vterm/toggle)
 
 ;; Tee-sitter configuration
@@ -98,6 +101,7 @@
     (unless (treesit-language-available-p lang)
       (treesit-install-language-grammar lang))))
 
+;; Activate lsp-mode automatically
 (add-hook 'typescript-ts-mode-hook #'lsp-deferred)
 (add-hook 'tsx-ts-mode-hook #'lsp-deferred)
 (add-hook 'javascript-ts-mode-hook #'lsp-deferred)
