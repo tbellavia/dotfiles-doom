@@ -35,9 +35,22 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
 
+;; Uncomment this to go back to vanilla emacs theme
+;; (setq doom-theme nil)
+;; (after! doom-modeline
+;;   (custom-set-faces!
+;;     '(mode-line
+;;       :background "#333333"
+;;       :foreground "#ffffff"
+;;       :box nil)
+;;     '(mode-line-inactive
+;;       :background "#222222"
+;;       :foreground "#888888"
+;;       :box nil)))
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
