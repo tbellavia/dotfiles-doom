@@ -129,7 +129,7 @@
 (setq lsp-enable-snippet nil)
 
 ;; Env Copy extension
-(load! "envcopy")
+(require 'envcopy)
 (map! :leader
       :desc "Copy env variable"
       "p e" #'envcopy-get-variable)

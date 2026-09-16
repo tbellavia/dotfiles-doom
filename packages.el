@@ -9,6 +9,9 @@
 ;; Use 'C-h f package\!' to look up documentation for the `package!' macro.
 (package! tldr)
 (package! hackernews)
+(package! envcopy
+  :recipe (:host github
+           :repo "tbellavia/envcopy"))
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;; (package! some-package)
