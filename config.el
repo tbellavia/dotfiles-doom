@@ -127,3 +127,9 @@
   (setq lsp-modeline-code-actions-enable t))
 
 (setq lsp-enable-snippet nil)
+
+;; Env Copy extension
+(load! "envcopy")
+(map! :leader
+      :desc "Copy env variable"
+      "p e" #'envcopy-get-variable)
